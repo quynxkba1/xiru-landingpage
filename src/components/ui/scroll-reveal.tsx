@@ -8,7 +8,7 @@ interface ScrollRevealProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-  direction?: 'up' | 'down' | 'left' | 'right';
+  direction?: 'up' | 'down' | 'left' | 'right' | 'none';
 }
 
 const directionOffset = {
@@ -16,6 +16,7 @@ const directionOffset = {
   down: { y: -40, x: 0 },
   left: { x: 40, y: 0 },
   right: { x: -40, y: 0 },
+  none: { x: 0, y: 0 },
 };
 
 export function ScrollReveal({
