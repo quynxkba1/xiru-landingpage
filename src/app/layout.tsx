@@ -39,7 +39,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} ${poppins.variable}`}
     >
       <head>
-        <link rel="dns-prefetch" href="https://app.xiru.io" />
+        <link rel="dns-prefetch" href={process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://app.xiru.io'} />
       </head>
       <body>
         <Navbar />

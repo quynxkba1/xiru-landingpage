@@ -34,10 +34,10 @@ export function FinalCtaSection() {
 
         <ScrollReveal delay={0.15}>
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/signup`}>
+            <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`}>
               Start free trial
             </Button>
-            <Button variant="outline" size="lg" href={`${SITE_CONFIG.appUrl}/login`}>
+            <Button variant="outline" size="lg" href={`${SITE_CONFIG.appUrl}/en/sign-in`}>
               Log in
             </Button>
           </div>

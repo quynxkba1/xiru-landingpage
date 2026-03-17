@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   name: 'XIRU',
   tagline: 'Long-term crypto buying strategy',
   url: 'https://xiru.io',
-  appUrl: 'https://app.xiru.io',
+  appUrl: (process.env.NEXT_PUBLIC_FRONTEND_URL || 'https://app.xiru.io').replace(/\/+$/, ''),
   email: 'hello@xiru.io',
 } as const;
 

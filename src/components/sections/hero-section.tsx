@@ -36,10 +36,10 @@ export function HeroSection() {
           className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.45s' }}
         >
-          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/signup`} className='border-2 border-accent-gold'>
+          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className='border-2 border-accent-gold'>
             Start free trial
           </Button>
-          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/login`} className='bg-[#14211F]! border-2 border-accent-gold hover:text-white/90 focus:ring-accent-gold/50'>
+          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/sign-in`} className='bg-[#14211F]! border-2 border-accent-gold hover:text-white/90 focus:ring-accent-gold/50'>
             Log in
           </Button>
         </div>

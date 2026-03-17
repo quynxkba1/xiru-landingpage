@@ -72,7 +72,7 @@ export function PricingSection() {
                 <Button
                   variant={tier.popular ? 'primary' : 'outline'}
                   size="md"
-                  href={`${SITE_CONFIG.appUrl}/signup?plan=${tier.name.toLowerCase()}`}
+                  href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type?plan=${tier.name.toLowerCase()}`}
                   className="mt-6 w-full"
                 >
                   Get started

@@ -57,10 +57,10 @@ export function Navbar() {
 
         {/* Desktop CTAs — right */}
         <div className="hidden items-center gap-3 md:flex">
-          <Button variant="ghost" size="sm" href={`${SITE_CONFIG.appUrl}/login`}>
+          <Button variant="ghost" size="sm" href={`${SITE_CONFIG.appUrl}/en/sign-in`}>
             Log in
           </Button>
-          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/signup`}>
+          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`}>
             Start free trial
           </Button>
         </div>
@@ -90,10 +90,10 @@ export function Navbar() {
               </a>
             ))}
             <div className="mt-4 flex flex-col gap-3">
-              <Button variant="outline" href={`${SITE_CONFIG.appUrl}/login`}>
+              <Button variant="outline" href={`${SITE_CONFIG.appUrl}/en/sign-in`}>
                 Log in
               </Button>
-              <Button variant="primary" href={`${SITE_CONFIG.appUrl}/signup`}>
+              <Button variant="primary" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`}>
                 Start free trial
               </Button>
             </div>
