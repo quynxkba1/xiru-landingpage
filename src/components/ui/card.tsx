@@ -1,4 +1,4 @@
-/* Dark card with subtle border, optional gold featured variant */
+/* Dark card with subtle border, gold gradient hover state (pure CSS) */
 
 interface CardProps {
   children: React.ReactNode;
@@ -7,12 +7,13 @@ interface CardProps {
 }
 
 export function Card({ children, variant = 'default', className = '' }: CardProps) {
-  const borderClass =
-    variant === 'featured' ? 'border-border-gold' : 'border-border-subtle';
+  const isFeatured = variant === 'featured';
 
   return (
     <div
-      className={`rounded-[16px] border bg-bg-card p-[32px] ${borderClass} ${className}`}
+      className={`overflow-hidden rounded-[16px] border border-white/[0.06] p-[32px] card-hover-gold ${
+        isFeatured ? 'card-hover-gold--active' : ''
+      } ${className}`}
     >
       {children}
     </div>

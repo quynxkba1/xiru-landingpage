@@ -1,4 +1,4 @@
-/* Small pill badge for pricing tier highlight (e.g. "POPULAR") */
+/* Diagonal ribbon badge for pricing tier highlight (e.g. "POPULAR") */
 
 interface BadgeProps {
   children: React.ReactNode;
@@ -7,10 +7,10 @@ interface BadgeProps {
 
 export function Badge({ children, className = '' }: BadgeProps) {
   return (
-    <span
-      className={`inline-block rounded-full bg-accent-gold px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-bg-primary ${className}`}
-    >
-      {children}
-    </span>
+    <div className={`absolute -right-[1px] -top-[1px] h-24 w-24 overflow-hidden ${className}`}>
+      <span className="absolute right-[-35px] top-[18px] block w-[150px] rotate-45 bg-accent-gold py-1.5 text-center text-[10px] font-semibold uppercase tracking-wider text-bg-primary shadow-sm">
+        {children}
+      </span>
+    </div>
   );
 }

@@ -23,7 +23,7 @@ export function PricingSection() {
             tag="Pricing"
             title="Transparent, simple"
             goldWord="simple"
-            subtitle="Start free for 14 days. No credit card required."
+            subtitle="No hidden fees. No surprises. Start free and scale when you're ready."
           />
         </ScrollReveal>
 
@@ -35,16 +35,16 @@ export function PricingSection() {
                 className="relative flex h-full flex-col"
               >
                 {tier.popular && (
-                  <Badge className="absolute -top-3 right-4">Popular</Badge>
+                  <Badge>Popular</Badge>
                 )}
-                <h3 className="font-heading text-[20px] font-medium text-white">
+                <h3 className="font-body text-[20px] font-medium text-white">
                   {tier.name}
                 </h3>
-                <p className="mt-1 font-body-alt text-[13px] font-light text-text-muted">
+                <p className="mt-1 font-body text-[13px] font-light text-text-muted">
                   {tier.description}
                 </p>
                 <div className="mt-4 flex items-baseline gap-1">
-                  <span className="font-heading text-[40px] font-bold leading-none text-white">
+                  <span className="font-body text-[40px] font-bold leading-none text-white">
                     ${tier.price}
                   </span>
                   <span className="font-body text-[13px] text-text-dim">/mo</span>
