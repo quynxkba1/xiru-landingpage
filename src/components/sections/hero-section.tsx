@@ -25,7 +25,7 @@ export function HeroSection() {
 
         <p
           data-waterfall-start
-          className="mx-auto mt-6 max-w-2xl font-body-alt text-[15.2px] leading-[25.84px] font-light text-text-muted md:text-[17px] md:leading-7 opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
+          className="mx-auto mt-6 max-w-2xl font-body-alt text-[15.2px] leading-[25.84px] font-light text-white md:text-[17px] md:leading-7 opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.3s' }}
         >
           Xiru helps you build a long-term crypto buying strategy designed to grow your wealth with intelligent guidance,{' '}
