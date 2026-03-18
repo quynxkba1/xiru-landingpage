@@ -12,7 +12,6 @@ import { PRICING_TIERS, SITE_CONFIG } from '@/lib/constants';
 export function PricingSection() {
   return (
     <section
-      id="pricing"
       aria-label="Pricing"
       className="px-6 py-[128px]"
       style={{ background: 'linear-gradient(180deg, #19150D 0%, #19150D 55%, #19150D 100%)' }}
