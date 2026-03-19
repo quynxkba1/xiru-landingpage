@@ -53,7 +53,6 @@ export function WaterfallWrapper({ children }: { children: React.ReactNode }) {
         style={{ top: canvasStyle.top, height: canvasStyle.height }}
       >
         <div className="relative w-full max-w-[1080px] h-full overflow-hidden">
-          <WaterfallCanvas />
         </div>
       </div>
     </div>

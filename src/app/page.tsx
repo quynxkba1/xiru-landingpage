@@ -1,15 +1,17 @@
 /* Homepage — assembles all sections in cinematic scroll order.
    Waterfall canvas spans hero + pillars sections via shared wrapper */
 
-import { HeroSection } from '@/components/sections/hero-section';
-import { PillarsSection } from '@/components/sections/pillars-section';
-import { HowItWorksSection } from '@/components/sections/how-it-works-section';
-import { ProductPreviewSection } from '@/components/sections/product-preview-section';
-import { PricingSection } from '@/components/sections/pricing-section';
-import { FaqSection } from '@/components/sections/faq-section';
-import { FinalCtaSection } from '@/components/sections/final-cta-section';
-import { JsonLdScript } from '@/components/seo/json-ld-script';
-import { WaterfallWrapper } from '@/components/hero/waterfall-wrapper';
+import { HeroSection } from "@/components/sections/hero-section";
+import { PillarsSection } from "@/components/sections/pillars-section";
+import { HowItWorksSection } from "@/components/sections/how-it-works-section";
+import { ProductPreviewSection } from "@/components/sections/product-preview-section";
+import { PricingSection } from "@/components/sections/pricing-section";
+import { FaqSection } from "@/components/sections/faq-section";
+import { FinalCtaSection } from "@/components/sections/final-cta-section";
+import { JsonLdScript } from "@/components/seo/json-ld-script";
+import { WaterfallWrapper } from "@/components/hero/waterfall-wrapper";
+import Image from "next/image";
+import BackgroundAILogo from "@/components/sections/bg-ai-logo";
 
 export default function HomePage() {
   return (
@@ -20,6 +22,7 @@ export default function HomePage() {
         <HeroSection />
         <HowItWorksSection />
       </WaterfallWrapper>
+      <BackgroundAILogo />
       <ProductPreviewSection />
       <PricingSection />
       <FaqSection />

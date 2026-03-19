@@ -1,6 +1,6 @@
 /* Product preview with browser frame mockup for dashboard screenshot */
 
-
+import Image from 'next/image';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
@@ -8,9 +8,12 @@ export function ProductPreviewSection() {
   return (
     <section
       aria-label="Product preview"
-      className="px-6 py-[128px]"
+      className="relative px-6 py-[30px]"
       style={{ background: 'linear-gradient(180deg, #19150D 0%, #19150D 100%)' }}
     >
+      {/* AI logo animation above content */}
+      
+
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <SectionHeading
@@ -38,12 +41,14 @@ export function ProductPreviewSection() {
                   </span>
                 </div>
               </div>
-              {/* Screenshot placeholder */}
-              <div className="flex h-[250px] items-center justify-center bg-bg-card md:h-[400px]">
-                <p className="font-body text-[14px] text-text-dim">
-                  Dashboard screenshot — image coming soon
-                </p>
-              </div>
+              {/* Dashboard screenshot */}
+              <Image
+                src="/images/hero/image-app-preview.png"
+                alt="XIRU dashboard showing AI analysis, growth wave chart, and portfolio rebalancing"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </ScrollReveal>

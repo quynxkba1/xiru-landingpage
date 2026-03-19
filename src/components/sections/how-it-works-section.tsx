@@ -10,16 +10,16 @@ export function HowItWorksSection() {
     <section
       id="how-it-works"
       aria-label="How it works"
-      className="px-6 py-[128px]"
-      style={{ background: 'linear-gradient(180deg, transparent 0%, #19150D 50%, #19150D 100%)' }}
+      className="px-6 py-[80px]"
+      style={{ background: 'linear-gradient(180deg, #1C241C 0%, #19150D 50%, #19150D 100%)' }}
     >
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <div data-waterfall-end>
             <SectionHeading
               tag="How it works"
-              title="Strategy, not speculation"
-              goldWord="Strategy"
+              title="Analysis, not chaos."
+              goldWord="Analysis"
             />
           </div>
         </ScrollReveal>
