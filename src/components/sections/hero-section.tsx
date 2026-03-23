@@ -29,7 +29,7 @@ export function HeroSection() {
       {/* Hero text content — higher z-index, above the globe */}
       <div className="relative z-10 mx-auto max-w-7xl pt-16 text-center animate-[fadeIn_0.6s_ease-out_forwards]">
         <h1
-          className="font-heading text-[40px] leading-[1.1] font-medium text-white md:text-[56px] lg:text-[68.58px] lg:leading-[75.438px] opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
+          className="font-heading text-[28px] leading-[1.1] font-medium text-white sm:text-[36px] md:text-[56px] lg:text-[68.58px] lg:leading-[75.438px] opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.15s' }}
         >
           Invest in <GoldText>crypto</GoldText>
@@ -48,7 +48,7 @@ export function HeroSection() {
         </p>
 
         <div
-          className="mt-16 flex flex-col items-center gap-3 sm:flex-row sm:justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
+          className="mt-10 flex items-center gap-3 sm:mt-16 flex-row justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.45s' }}
         >
           <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className='border-2 border-accent-gold bg-[#69644F]/60! hover:bg-[#69644F]/80 focus:ring-accent-gold/50'>
@@ -61,8 +61,8 @@ export function HeroSection() {
       </div>
 
       {/* "AI-powered long-term / crypto investment system" — above globe, below CTAs */}
-      <div className="relative z-10 mt-auto pt-[60vh] pb-8 text-center">
-        <p className="font-heading text-[28px] leading-[1.3] md:text-[40px] lg:text-[48px]">
+      <div className="relative z-10 mt-0 pt-10 md:mt-auto sm:pt-[25vh] md:pt-[60vh] pb-8 text-center">
+        <p className="font-heading text-[22px] leading-[1.3] sm:text-[28px] md:text-[40px] lg:text-[48px]">
           <em className="text-accent-gold italic">AI-powered long-term</em>
           <br />
           <span className="text-white not-italic">crypto investment system</span>
