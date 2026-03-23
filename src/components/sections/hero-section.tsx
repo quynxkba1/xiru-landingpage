@@ -51,10 +51,10 @@ export function HeroSection() {
           className="mt-10 flex items-center gap-3 sm:mt-16 flex-row justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.45s' }}
         >
-          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className='border-2 border-accent-gold bg-[#69644F]/60! hover:bg-[#69644F]/80 focus:ring-accent-gold/50'>
+          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className='border-2 border-accent-gold bg-[#69644F]/60! hover:bg-[#69644F]/80 focus:ring-accent-gold/50 hover:text-white/60'>
             Start free trial &rarr;
           </Button>
-          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/sign-in`} className='bg-[#14211F]! border-2 border-accent-gold bg-[#14211F]/60! hover:text-white/90 focus:ring-accent-gold/50'>
+          <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/sign-in`} className='bg-[#14211F]! border-2 border-accent-gold bg-[#14211F]/60! hover:text-white/60 focus:ring-accent-gold/50'>
             Log in
           </Button>
         </div>
