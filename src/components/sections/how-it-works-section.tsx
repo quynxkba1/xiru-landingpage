@@ -11,7 +11,7 @@ export function HowItWorksSection() {
       id="how-it-works"
       aria-label="How it works"
       className="px-6 py-[80px]"
-      style={{ background: 'linear-gradient(180deg, #1C241C 0%, #19150D 50%, #19150D 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #1C241C 0%, #1C241C 50%, #19150D 100%)' }}
     >
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
@@ -37,7 +37,7 @@ export function HowItWorksSection() {
                   {/* Timeline dot — visible on md+ */}
                   <ScrollReveal delay={i * 0.1 + 0.2} direction="none" className="absolute left-1/2 top-[76px] hidden -translate-x-1/2 md:block">
                     <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full border-2 border-accent-gold/30 bg-bg-card/30">
-                      <div className="h-[6px] w-[6px] rounded-full bg-accent-gold" />
+                      <div className="h-[12px] w-[12px] rounded-full bg-accent-gold" />
                     </div>
                   </ScrollReveal>
 
@@ -51,7 +51,7 @@ export function HowItWorksSection() {
                         <h3 className="font-heading text-[24px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[36px] whitespace-pre-line">
                           {step.title}
                         </h3>
-                        <p className="mt-3 font-body-alt text-[14px] font-light leading-[22px] text-text-muted md:max-w-[420px] whitespace-pre-line">
+                        <p className="mt-3 font-body-alt text-[14px] font-light leading-[22px] text-white md:max-w-[420px] whitespace-pre-line">
                           {step.description}
                         </p>
                       </ScrollReveal>
@@ -69,7 +69,7 @@ export function HowItWorksSection() {
                           <h3 className="font-heading text-[24px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[36px] whitespace-pre-line">
                             {step.title}
                           </h3>
-                          <p className="mt-3 font-body-alt text-[14px] font-light leading-[22px] text-text-muted whitespace-pre-line">
+                          <p className="mt-3 font-body-alt text-[14px] font-light leading-[22px] text-white whitespace-pre-line">
                             {step.description}
                           </p>
                         </div>
