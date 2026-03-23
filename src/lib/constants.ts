@@ -94,6 +94,7 @@ export const PRICING_TIERS = [
       { label: 'Conservative strategy only', included: true },
       { label: 'Basic news alerts (No AI filters)', included: true },
       { label: 'No rebalancing', included: false },
+      { label: 'No access to downloadable reports', included: false },
       { label: 'No access to AI chat', included: false },
     ],
   },

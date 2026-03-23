@@ -48,7 +48,7 @@ export function HeroSection() {
         </p>
 
         <div
-          className="mt-10 flex flex-col items-center gap-3 sm:mt-16 sm:flex-row justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
+          className="mt-10 flex items-center gap-3 sm:mt-16 flex-row justify-center opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.45s' }}
         >
           <Button variant="primary" size="lg" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className='w-full sm:w-auto border-2 border-accent-gold bg-[#69644F]/60! hover:bg-[#69644F]/80 focus:ring-accent-gold/50 hover:text-white/60'>

@@ -40,9 +40,9 @@ export function PricingSection() {
                 <h3 className="font-body text-[20px] font-medium text-white">
                   {tier.name}
                 </h3>
-                <p className="mt-1 font-body text-[13px] font-light text-text-muted">
+                {/* <p className="mt-1 font-body text-[13px] font-light text-text-muted">
                   {tier.description}
-                </p>
+                </p> */}
                 <div className="mt-4 flex items-baseline gap-1">
                   <span className="font-body text-[40px] font-bold leading-none text-white">
                     ${tier.price}
@@ -54,17 +54,19 @@ export function PricingSection() {
                   {tier.features.map((f) => (
                     <li key={f.label} className="flex items-center gap-2">
                       {f.included ? (
-                        <Check className="h-4 w-4 shrink-0 text-accent-gold" />
+                        <>
+                          <Check className="h-4 w-4 shrink-0 text-accent-gold" />
+                          <span className="font-body text-[13.6px] text-text-muted">
+                            {f.label}
+                          </span>
+                        </>
                       ) : (
-                        <Minus className="h-4 w-4 shrink-0 text-text-dim" />
+                        <>
+                        <div className="h-4 w-4" />
+                        <span className="font-body text-[13.6px] text-text-muted">
+                            {f.label}
+                          </span></>
                       )}
-                      <span
-                        className={`font-body text-[13.6px] ${
-                          f.included ? 'text-text-muted' : 'text-text-dim'
-                        }`}
-                      >
-                        {f.label}
-                      </span>
                     </li>
                   ))}
                 </ul>
