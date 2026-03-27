@@ -10,7 +10,7 @@ export function HowItWorksSection() {
     <section
       id="how-it-works"
       aria-label="How it works"
-      className="px-6 pt-[56px] pb-[80px] md:px-[76px]"
+      className="px-6 pt-[56px] pb-[0px] md:px-[76px]"
       style={{ background: 'linear-gradient(180deg, #1C241C 0%, #1C241C 50%, #19150D 100%)' }}
     >
       <div className="mx-auto max-w-5xl">
@@ -28,7 +28,7 @@ export function HowItWorksSection() {
         {/* Timeline */}
         <div className="relative mt-[80px]">
           {/* Center gold line — visible on md+ */}
-          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-accent-gold/40 via-accent-gold/20 to-transparent md:block" />
+          <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-gradient-to-b from-accent-gold/30 via-accent-gold/20 to-accent-gold/30 md:block" />
 
           <div className="space-y-8 md:space-y-[96px]">
             {STEPS.map((step, i) => {

@@ -2,7 +2,11 @@ import Image from 'next/image'
 
 function BackgroundAILogo() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center"
+      style={{
+        background: 'linear-gradient(180deg, #19150D 0%, #19150D 55%, #19150D 100%)'
+      }}
+    >
       <div className="relative w-[280px] sm:w-[400px] md:w-[600px] lg:w-[900px]">
         {/* Animated gif background */}
         <Image
