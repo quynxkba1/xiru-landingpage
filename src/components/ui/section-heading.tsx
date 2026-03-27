@@ -9,7 +9,15 @@ interface SectionHeadingProps {
   subtitle?: string;
   className?: string;
   align?: 'center' | 'left';
+  size?: 'sm' | 'default' | 'lg';
 }
+
+/* Figma-matched heading sizes: sm=45.72px, default=60px, lg=75px */
+const sizeClasses: Record<string, string> = {
+  sm: 'text-[28px] md:text-[45.72px] md:leading-[54.864px]',
+  default: 'text-[32px] md:text-[60px] md:leading-[54.864px]',
+  lg: 'text-[36px] md:text-[75px] md:leading-[54.864px]',
+};
 
 export function SectionHeading({
   tag,
@@ -18,6 +26,7 @@ export function SectionHeading({
   subtitle,
   className = '',
   align = 'center',
+  size = 'default',
 }: SectionHeadingProps) {
   const alignClass = align === 'center' ? 'text-center' : 'text-left';
 
@@ -41,7 +50,7 @@ export function SectionHeading({
           {tag}
         </span>
       )}
-      <h2 className="font-heading text-[32px] leading-[1.15] font-normal text-white md:text-[60px] md:leading-[54.86px]">
+      <h2 className={`font-heading leading-[1.15] font-normal text-white ${sizeClasses[size]}`}>
         {renderTitle()}
       </h2>
       {subtitle && (

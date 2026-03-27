@@ -20,6 +20,7 @@ export function FaqSection() {
             tag="FAQ"
             title="Questions? "
             goldWord="Answered."
+            size="sm"
           />
         </ScrollReveal>
 

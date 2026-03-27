@@ -29,7 +29,7 @@ export function HeroSection() {
       {/* Hero text content — higher z-index, above the globe */}
       <div className="relative z-10 mx-auto max-w-7xl pt-8 sm:pt-16 text-center animate-[fadeIn_0.6s_ease-out_forwards]">
         <h1
-          className="font-heading text-[24px] leading-[1.15] font-medium text-white sm:text-[32px] md:text-[56px] lg:text-[68.58px] lg:leading-[75.438px] opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
+          className="font-heading text-[24px] leading-[1.15] font-normal text-white sm:text-[32px] md:text-[56px] lg:text-[75px] lg:leading-[75.438px] opacity-0 animate-[fadeUp_0.8s_cubic-bezier(0.25,0.46,0.45,0.94)_forwards]"
           style={{ animationDelay: '0.15s' }}
         >
           Invest in <GoldText>crypto</GoldText>
@@ -62,7 +62,7 @@ export function HeroSection() {
 
       {/* "AI-powered" text — close to buttons on mobile, pushed to bottom on sm+ */}
       <div className="relative z-10 mt-4 pb-8 text-center px-6 sm:mt-auto lg:pt-[60vh]">
-        <p className="font-heading text-[20px] leading-[1.3] sm:text-[26px] md:text-[40px] lg:text-[48px]">
+        <p className="font-heading text-[20px] leading-[1.3] sm:text-[26px] md:text-[40px] lg:text-[45px] lg:leading-[40px]">
           <em className="text-accent-gold italic">AI-powered long-term</em>
           <br />
           <span className="text-white not-italic">crypto investment system</span>

@@ -23,7 +23,7 @@ export function FinalCtaSection() {
 
       <div className="relative mx-auto max-w-2xl text-center">
         <ScrollReveal>
-          <h2 className="font-heading text-[40px] font-medium leading-[1.15] text-white md:text-[56px]">
+          <h2 className="font-heading text-[40px] font-normal leading-[1.15] text-white md:text-[56px]">
             Try for{' '}
             <em className="font-heading italic text-accent-gold">free</em>
           </h2>

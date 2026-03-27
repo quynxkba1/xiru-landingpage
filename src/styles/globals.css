@@ -3,13 +3,13 @@
 /* XIRU Design Tokens */
 @theme {
   /* Colors */
-  --color-bg-primary: #19150d;
-  --color-bg-secondary: #1c241c;
+  --color-bg-primary: #18120a;
+  --color-bg-secondary: #18120a;
   --color-bg-card: #18120a;
   --color-accent-gold: #e3c69e;
   --color-accent-gold-dark: #c9a574;
   --color-gold-muted: rgba(227, 198, 158, 0.7);
-  --color-nav-bg: #1c241c;
+  --color-nav-bg: #18120a;
   --color-nav-border: #174843;
   --color-button-fill: #69644f;
   --color-border-subtle: rgba(255, 255, 255, 0.06);

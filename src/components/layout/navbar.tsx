@@ -33,10 +33,10 @@ export function Navbar() {
         {/* Logo — left */}
         <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/images/logo/logo (1).svg"
+            src="/images/logo/logo-landing.svg"
             alt={SITE_CONFIG.name}
-            width={80}
-            height={32}
+            width={93}
+            height={30}
             priority
           />
         </Link>
