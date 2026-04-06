@@ -61,8 +61,8 @@ export function HeroSection() {
       </div>
 
       {/* "AI-powered" text — close to buttons on mobile, pushed to bottom on sm+ */}
-      <div className="relative z-10 mt-4 pb-8 text-center px-6 sm:mt-auto lg:pt-[60vh]">
-        <p className="font-heading text-[20px] leading-[1.3] sm:text-[26px] md:text-[40px] lg:text-[45px] lg:leading-[40px]">
+      <div className="relative z-10 mt-4 pb-0 text-center px-6 sm:mt-auto lg:pt-[60vh]">
+        <p className="font-heading text-[20px] leading-[1.3] pt-25 mt-20sm:text-[26px] md:text-[40px] lg:text-[45px] lg:leading-[40px]">
           <em className="text-accent-gold italic">AI-powered long-term</em>
           <br />
           <span className="text-white not-italic">crypto investment system</span>

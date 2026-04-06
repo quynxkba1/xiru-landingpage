@@ -24,7 +24,7 @@ export function Navbar() {
   return (
     <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
       <nav
-        className={`relative flex w-full max-w-full items-center justify-between rounded-full border border-nav-border px-6 py-3 transition-all duration-300 ${
+        className={`relative flex w-full max-w-5xl items-center justify-between rounded-full px-6 py-3 transition-all duration-300 ${
           scrolled
             ? 'bg-nav-bg/90 backdrop-blur-md shadow-lg'
             : 'bg-nav-bg/70 backdrop-blur-sm'
@@ -60,7 +60,7 @@ export function Navbar() {
           <Button variant="ghost" size="sm" href={`${SITE_CONFIG.appUrl}/en/sign-in`}>
             Log in
           </Button>
-          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`}>
+          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className=''>
             Start free trial
           </Button>
         </div>

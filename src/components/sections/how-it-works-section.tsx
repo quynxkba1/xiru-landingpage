@@ -10,10 +10,10 @@ export function HowItWorksSection() {
     <section
       id="how-it-works"
       aria-label="How it works"
-      className="px-6 pt-[56px] pb-[0px] md:px-[76px]"
+      className="px-4 pt-[56px] pb-[0px] md:px-8"
       style={{ background: 'linear-gradient(180deg, #1C241C 0%, #1C241C 50%, #19150D 100%)' }}
     >
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <div data-waterfall-end>
             <SectionHeading
@@ -46,10 +46,10 @@ export function HowItWorksSection() {
                   <div className={`w-full text-center ${isEven ? 'md:text-left' : 'hidden md:block'}`}>
                     {isEven && (
                       <ScrollReveal delay={i * 0.1} direction="left">
-                        <span className="mb-2 block font-heading text-[28px] font-bold text-white md:text-[48px] md:leading-[48px]">
+                        <span className="mb-2 block font-heading text-[36px] font-bold text-white md:text-[56px] md:leading-[56px]">
                           0{step.step}
                         </span>
-                        <h3 className="font-heading text-[24px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[50px] xl:text-[55px] md:leading-[50px] whitespace-pre-line">
+                        <h3 className="font-heading text-[30px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[56px] xl:text-[62px] md:leading-[56px] whitespace-pre-line">
                           {step.title}
                         </h3>
                         <p className="mt-3 font-body-alt text-[15.2px] font-light leading-[25.84px] text-white md:max-w-[420px] whitespace-pre-line">
@@ -64,10 +64,10 @@ export function HowItWorksSection() {
                     {!isEven && (
                       <ScrollReveal delay={i * 0.1} direction="right">
                         <div className="md:ml-auto">
-                          <span className="mb-2 block font-heading text-[28px] font-bold text-white md:text-[48px] md:leading-[48px]">
+                          <span className="mb-2 block font-heading text-[36px] font-bold text-white md:text-[56px] md:leading-[56px]">
                             0{step.step}
                           </span>
-                          <h3 className="font-heading text-[24px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[50px] xl:text-[55px] md:leading-[50px] whitespace-pre-line">
+                          <h3 className="font-heading text-[30px] font-medium tracking-tight text-accent-gold leading-[1.2] md:text-[56px] xl:text-[62px] md:leading-[56px] whitespace-pre-line">
                             {step.title}
                           </h3>
                           <p className="mt-3 font-body-alt text-[15.2px] font-light leading-[25.84px] text-white whitespace-pre-line">
