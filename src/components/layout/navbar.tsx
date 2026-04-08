@@ -31,7 +31,7 @@ export function Navbar() {
         }`}
       >
         {/* Logo — left */}
-        <Link href="/" className="flex shrink-0 items-center">
+        <Link href="/" className="relative z-10 flex shrink-0 items-center">
           <Image
             src="/images/logo/logo-landing.svg"
             alt={SITE_CONFIG.name}
@@ -41,8 +41,8 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Desktop nav links — absolutely centered */}
-        <ul className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
+        {/* Desktop nav links — true center via absolute positioning */}
+        <ul className="absolute inset-0 hidden items-center justify-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
@@ -56,11 +56,11 @@ export function Navbar() {
         </ul>
 
         {/* Desktop CTAs — right */}
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="relative z-10 hidden items-center gap-3 md:flex">
           <Button variant="ghost" size="sm" href={`${SITE_CONFIG.appUrl}/en/sign-in`}>
             Log in
           </Button>
-          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`} className=''>
+          <Button variant="primary" size="sm" href={`${SITE_CONFIG.appUrl}/en/onboarding/starter-type`}>
             Start free trial
           </Button>
         </div>
@@ -68,7 +68,7 @@ export function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-white md:hidden"
+          className="relative z-10 text-white md:hidden"
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
           {mobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
